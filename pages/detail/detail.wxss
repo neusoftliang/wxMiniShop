@@ -1,0 +1,40 @@
+/* pages/detail/detail.wxss */
+.base-info{
+  display: flex;
+  flex-direction:column;
+}
+.info-title{
+  margin: 24rpx 20rpx 10rpx 20rpx;
+  font-size: 32rpx;
+  color: gray;
+}
+.info-newPrice{
+  margin-left: 26rpx;
+  font-size: 36rpx;
+  color: #ff5777
+}
+
+.info-oldPrice{
+  margin-left: 12rpx;
+  font-size: 26rpx;
+  color: gray;
+  text-decoration: line-through
+}
+
+.info-discount{
+  margin-left: 10rpx;
+  padding: 4rpx 6rpx;
+  position: relative;
+  bottom: 12rpx;
+  font-size: 24rpx;
+  color: white;
+  background-color: #ff5777;
+  border-radius: 16rpx;
+}
+
+.info-columns{
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 24prx;
+  margin-right: 24rpx;
+}

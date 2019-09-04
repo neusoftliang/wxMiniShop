@@ -1,0 +1,48 @@
+/* pages/home.wxss */
+
+.home {
+  height: 100%;
+  width:100%;
+}
+
+.contentscroll {
+  height: 100%;
+}
+.recommend{
+  display: flex;
+  margin-top: 40rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 16rpx solid #eee;
+}
+.recommendItem{
+  flex: 1;
+  text-align: center;
+}
+.recommendItem image{
+  width: 160rpx;
+  height: 160rpx;
+}
+.recommendItem text{
+  color: black;
+  font-size: 28rpx;
+
+}
+.feature-area{
+  width: 100%;
+}
+
+.good-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 8rpx;
+}
+.good-list > .good-item {
+  position: relative;
+}
+
+.good-list > .good-item {
+  width: 48%;
+  margin-top: 20rpx;
+}
+

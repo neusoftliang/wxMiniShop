@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "dw-swiper":"./detailComponets/dw-swiper"
+  }
+}

@@ -1,0 +1,39 @@
+<!--pages/home.wxml-->
+<view class="home">
+	
+	<view hidden='{{!showTabControl}}'>
+	    <w-tab-control class='tab-control-temp' 
+	                 titles="{{titles}}" 
+	                 bind:tabclick="tabClick"/>
+	  </view>
+	
+  <scroll-view class='contentscroll' 
+              scroll-y='true' 
+              bindscrolltolower="loadMore"
+              scroll-with-animation="true"
+			  scroll-top="{{topPosition}}"
+              bindscroll="scrollPosition"
+              >
+    <w-swiper images="{{banners}}" />
+    <!-- 好物推荐 -->
+    <view class="recommend">
+      <block wx:for="{{recommend}}" wx:key="index">
+        <view class="recommendItem">
+          <image src="{{item.image}}"></image>
+          <view>
+            <text>{{item.title}}</text>
+          </view>
+        </view>
+      </block>
+    </view>
+    <!-- 本周流行 -->
+    <image class="feature-area" src="/assets/images/home/recommend_bg.jpg"></image>
+    <w-tab-control titles='{{titles}}' bind:tabclick="tabclick"></w-tab-control>
+    <!-- 底部商品列表 -->
+    <view class="good-list">
+      <block wx:for="{{goods[currentType].list}}" wx:key="index">
+        <good_item class="good-item" goodItem="{{item}}"></good_item>
+      </block>
+    </view>
+  </scroll-view>
+</view>

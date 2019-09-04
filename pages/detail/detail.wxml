@@ -1,0 +1,28 @@
+<view>
+  <scroll-view>
+  <!-- banner -->
+    <dw-swiper images="{{topImages}}"></dw-swiper>
+    <!-- 标题等详细信息 -->
+    <view class="base-info">
+      <text class="info-title">{{baseInfo.title}}</text>
+      <view class="info-price">
+        <text class="info-newPrice">{{baseInfo.newPrice}}</text>
+        <text class="info-oldPrice">{{baseInfo.oldPrice}}</text>
+        <text class="info-discount">{{baseInfo.discount}}</text>
+      </view>
+      <view class="info-columns">
+        <block wx:for="{{baseInfo.columns}}" key="index">
+          <text class="columns-item">{{item}}</text>
+        </block>
+      </view>
+      <view class="info-services">
+        <block wx:for="{{baseInfo.services}}" wx:if="{{index !== 0}}" key="index">
+          <view class="services-item">
+            <image src="{{item.icon}}"></image>
+            <text>{{item.name}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,7 @@
+/* componets/w-swiper/w-swiper.wxss */
+.l-swiper{
+  height: 360rpx
+}
+.swiper-image{
+  width:100%
+}

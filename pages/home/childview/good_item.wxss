@@ -1,0 +1,25 @@
+/* pages/home/childview/good_item.wxss */
+.good-item-box{
+  text-align: center;
+  
+}
+.good-item-cover{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.good-item-title{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 28rpx;
+  overflow: hidden;
+}
+.good-item-price{
+  white-space: nowrap;
+  font-size: 26rpx;
+}
+.good-item-price image{
+  width: 30rpx;
+  height: 30rpx;
+  padding-left: 10rpx;
+  
+}

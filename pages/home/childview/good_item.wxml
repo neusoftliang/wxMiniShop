@@ -1,0 +1,12 @@
+<!--pages/home/childview/good_item.wxml-->
+<view class="good-item-box" bindtap="itemClick">
+  <image class="good-item-cover" src="{{goodItem.show.img}}"/>
+  <view class="good-item-title">
+    <text>{{goodItem.title}}</text>
+  </view>
+  <view class="good-item-price">
+    <text>¥{{goodItem.price}}</text>
+    <image src="/assets/images/common/favor.png"></image>
+    <text>{{goodItem.cfav}}</text>
+  </view>
+</view>
